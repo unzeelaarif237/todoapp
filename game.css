@@ -1,0 +1,116 @@
+body {
+ background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcsoTk5YVrRLV_3dHr5ppn8_0LMiRLavZBlg&s'); /* Your base64 image here */
+  background-size: cover; /* Makes the image cover the entire background */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container, .register-container {
+    background-color: #3333331f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #c8b4ff;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #7ccbff;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+p {
+    margin-top: 15px;
+}
+
+a {
+    color: #021827;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+    .login-container, .register-container {
+        width: 90%; /* Full width on small screens */
+        padding: 15px; /* Reduced padding */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Smaller heading */
+    }
+
+    button {
+        padding: 8px; /* Smaller button padding */
+    }
+}
+
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+    .login-container, .register-container {
+        width: 80%; /* Slightly less width */
+    }
+
+    h2 {
+        font-size: 1.8em; /* Slightly larger heading */
+    }
+
+    button {
+        padding: 9px; /* Adjust button padding */
+    }
+}
+
+
+/* Desktops */
+@media (min-width: 901px) {
+    .login-container, .register-container {
+        width: 300px; /* Fixed width for larger screens */
+    }
+
+    h2 {
+        font-size: 2em; /* Larger heading */
+    }
+
+    button {
+        padding: 10px; /* Standard button padding */
+    }
+}
